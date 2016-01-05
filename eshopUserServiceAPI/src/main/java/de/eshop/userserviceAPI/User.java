@@ -1,6 +1,5 @@
 package de.eshop.userserviceAPI;
 
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)

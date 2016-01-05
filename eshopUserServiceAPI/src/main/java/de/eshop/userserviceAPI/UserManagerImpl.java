@@ -6,11 +6,6 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestTemplate;
 
-/**
- * 
- * @author knad0001
- */
-
 @Repository
 public class UserManagerImpl implements UserManager {
 
@@ -76,8 +71,8 @@ public class UserManagerImpl implements UserManager {
 
 	@Override
 	public List<User> getAllUsers() {	
-		User[] forNow = restTemplate.getForObject(USER_URI + "s", User[].class);
-	    return Arrays.asList(forNow);
+		User[] users = restTemplate.getForObject(USER_URI + "s", User[].class);
+	    return Arrays.asList(users);
 	}
 
 }
